@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="#45E6E6E6"
+    >
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="17dp"
+        android:src="@drawable/ic_back"
+        android:id="@+id/back_image"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_toEndOf="@id/back_image"
+        android:id="@+id/back"
+        android:textColor="#000000"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textSize="14sp"/>
+    <TextView
+        android:id="@+id/image_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/iceberg"
+        android:gravity="center"
+        android:text="Triber"
+        android:textColor="#3FCFB9"
+        android:textSize="35sp"
+        android:textStyle="bold"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:id="@+id/textview"
+        android:textColor="#000000"
+        android:layout_below="@id/image_logo"
+        android:text="Log in with Email and password"/>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardemailview"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/textview"
+        android:layout_gravity="center_vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:hint="Email"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="10dp"
+                android:background="@android:color/transparent"
+                android:padding="15dp"
+
+                android:id="@+id/email"
+                android:inputType="textEmailAddress"/>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardpassview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginEnd="40dp"
+        android:layout_below="@id/cardemailview"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center_vertical"
+                android:hint="Password"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawablePadding="15dp"
+                android:background="@android:color/transparent"
+                android:padding="15dp"
+                android:textColorHighlight="#8B8B8B"
+                android:id="@+id/password"
+                android:inputType="textPassword"
+
+
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login"
+        android:text="Log In"
+        android:layout_below="@id/cardpassview"
+        android:textColor="#ffffff"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/button_background"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:text="Don't have an account? Sign Up"
+        android:layout_below="@id/login"
+        android:id="@+id/txt_signup"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"
+
+        />
+
+
+
+
+
+</RelativeLayout>
+
+
